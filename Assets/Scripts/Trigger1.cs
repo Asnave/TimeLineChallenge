@@ -13,10 +13,10 @@ public class Trigger1 : MonoBehaviour
     {
         timeline.Play();
 
-        if (OneTimeTrigger == true)
-        {
-            Destroy(this.gameObject);
-        }
+       // if (OneTimeTrigger == true)
+       // {
+       //     Destroy(this.gameObject);
+       // }
     }
 
 }

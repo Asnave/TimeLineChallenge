@@ -230,13 +230,14 @@ GameObject:
   - component: {fileID: 364073786}
   - component: {fileID: 364073785}
   - component: {fileID: 364073784}
+  - component: {fileID: 364073788}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &364073784
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -307,12 +308,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364073783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4886384, y: 13.818327, z: -3.1901839}
+  m_LocalPosition: {x: 6.4886384, y: 12.03, z: -3.1901839}
   m_LocalScale: {x: 2.2157, y: 2.2157, z: 2.2157}
   m_Children: []
   m_Father: {fileID: 1173764562}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &364073788
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364073783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &434660445
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &434660446
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5111,7 +5131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434660445}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4886384, y: 13.818327, z: -3.34}
+  m_LocalPosition: {x: 6.4886384, y: 11.80204, z: -3.34}
   m_LocalScale: {x: 2.1415815, y: 2.1415815, z: 2.1415815}
   m_Children: []
   m_Father: {fileID: 1173764562}
@@ -5407,8 +5427,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 176e17efc872d05489935707de5c61a2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5503,7 +5523,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: bb3d6247bceaf4342819c918b79d5f17, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -5512,6 +5532,10 @@ PlayableDirector:
     value: {fileID: 434660445}
   - key: {fileID: 4286318097168769997, guid: bb3d6247bceaf4342819c918b79d5f17, type: 2}
     value: {fileID: 364073783}
+  - key: {fileID: -7085872639265886419, guid: bb3d6247bceaf4342819c918b79d5f17, type: 2}
+    value: {fileID: 364073788}
+  - key: {fileID: -7187696958429887133, guid: bb3d6247bceaf4342819c918b79d5f17, type: 2}
+    value: {fileID: 1173764563}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1181305636
@@ -5542,7 +5566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181305636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.49, y: 9.81, z: -3.29}
+  m_LocalPosition: {x: 16.1, y: 9.81, z: -3.29}
   m_LocalScale: {x: 1.2339, y: 1.2339, z: 6.5629907}
   m_Children: []
   m_Father: {fileID: 1173764562}
